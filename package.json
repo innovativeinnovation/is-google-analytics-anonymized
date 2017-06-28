@@ -1,0 +1,15 @@
+{
+  "name": "is-google-analytics-anonymized",
+  "version": "0.0.1",
+  "description": "Check IP Anonymization of Google Analytics in a Web page",
+  "keywords": [
+    "google",
+    "analytics",
+    "anonymization",
+    "ip"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/epfl-devrun/is-google-analytics-anonymized.git",
+  "scripts": {}
+}
