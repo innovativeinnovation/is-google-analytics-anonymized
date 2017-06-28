@@ -11,5 +11,11 @@
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
   "repository": "https://github.com/epfl-devrun/is-google-analytics-anonymized.git",
-  "scripts": {}
+  "scripts": {
+    "test": "jshint . && jscs ."
+  },
+  "devDependencies": {
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.5"
+  }
 }
