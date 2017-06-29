@@ -11,5 +11,6 @@
   "unused": false,
   "strict": true,
   "globals": {
+    "phantom": true
   }
 }
