@@ -54,10 +54,10 @@ var onMaxExecutionTime = function() {
 
 // Open the page, wait and exit
 var onPageOpen = function(status) {
+  data.url = page.url;
   if (status !== 'success') {
     data.hasError = true;
-    data.errorMsg = 'FAILED: to load ' + system.args[1] + '\n' +
-      page.reasonUrl + '\n' + page.reason;
+    data.errorMsg = 'FAILED: to load ' + system.args[1] + '\n' + page.reason;
     console.log(JSON.stringify(data));
     phantom.exit(1);
   } else {
@@ -122,8 +122,7 @@ if (system.args.length === 1) {
 
   // Make a note of any errors
   page.onResourceError = function(resourceError) {
-    page.reason    = resourceError.errorString;
-    page.reasonUrl = resourceError.url;
+    page.reason = resourceError.errorString;
   };
 
   // Open the page, wait and exit
