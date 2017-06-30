@@ -37,11 +37,11 @@ var resourcesToLog = [
 
 // Like ga('send', 'pageview');
 var universalGA =
-  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com/r/collect.*');
+  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com/(r/)?collect.*');
 
 // Like _gaq.push(['_trackPageview']);
 var asyncGA =
-  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com/r/__utm.*');
+  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com/(r/)?__utm.*');
 
 // If we are still running after MAX_EXECUTION_TIME, log and exit
 var onMaxExecutionTime = function() {
