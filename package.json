@@ -12,11 +12,14 @@
   "license": "Apache-2.0",
   "repository": "https://github.com/epfl-devrun/is-google-analytics-anonymized.git",
   "scripts": {
-    "test": "jshint . && jscs ."
+    "test": "jshint . && jscs . && mocha"
   },
   "devDependencies": {
+    "chai": "^4.0.2",
+    "http": "0.0.0",
     "jscs": "^3.0.7",
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.5",
+    "mocha": "^3.4.2"
   },
   "dependencies": {
     "phantomjs-prebuilt": "^2.1.14",

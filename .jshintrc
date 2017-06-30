@@ -11,6 +11,11 @@
   "unused": false,
   "strict": true,
   "globals": {
+    "after": true,
+    "before": true,
+    "beforeEach": true,
+    "describe": true,
+    "it": true,
     "phantom": true
   }
 }
