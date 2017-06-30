@@ -20,7 +20,7 @@ var yargs      = require('yargs')
   // Version
   .alias('v', 'version')
   .version(function() {
-    return require('../package').version;
+    return require('../../package').version;
   })
   .describe('v', 'Show version information')
 
