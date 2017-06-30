@@ -11,6 +11,16 @@
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
   "repository": "https://github.com/epfl-devrun/is-google-analytics-anonymized.git",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "src/lib/index.js",
+  "bin": "src/bin/cli.js",
+  "files": [
+    "src/lib/index.js",
+    "src/bin/cli.js",
+    "src/bin/get-google-analytics-resources.js"
+  ],
   "scripts": {
     "test": "jshint . && jscs . && mocha",
     "coverage": "istanbul cover _mocha",
