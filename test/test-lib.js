@@ -13,7 +13,7 @@ var isGoogleAnalyticsAnonymized = require('../src/lib/index.js');
 
 describe('is-google-analytics-anonymized module', function() {
 
-  this.timeout(15000);
+  this.timeout(30000);
 
   before(function() {
     server.listen(8000);
