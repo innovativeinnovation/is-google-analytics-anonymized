@@ -33,13 +33,15 @@ var argv = yargs.argv;
 var url  = argv._[ 0 ];
 
 var checkAllTrackers = function(trackers) {
-  var isAnonymized = true;
+  if (trackers.length <= 0) {
+    return 2;
+  }
   for (var i = 0; i < trackers.length; i++) {
     if (!trackers[i].anonymized) {
-      return false;
+      return 0;
     }
   }
-  return true;
+  return 1;
 };
 
 var putIsAnonymized = function() {
@@ -56,14 +58,23 @@ var putIsNotAnonymized = function() {
   );
 };
 
+var putNotUsingGA = function() {
+  console.log(
+    logSymbols.info,
+    colors.blue('Google Analytics is not used')
+  );
+};
+
 isGoogleAnalyticsAnonymized(url, function(err, data) {
   if (err) {
     throw err;
   }
-  var isAnonymized = checkAllTrackers(data.trackers);
-  if (isAnonymized) {
-    putIsAnonymized(isAnonymized);
+  var anonyme = checkAllTrackers(data.trackers);
+  if (anonyme === 1) {
+    putIsAnonymized();
+  } else if (anonyme === 2) {
+    putNotUsingGA();
   } else {
-    putIsNotAnonymized(isAnonymized);
+    putIsNotAnonymized();
   }
 });
