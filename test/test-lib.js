@@ -11,7 +11,7 @@ var server = require('./server.js');
 
 var isGoogleAnalyticsAnonymized = require('../src/lib/index.js');
 
-describe('is-google-analytics-anonymized module', function() {
+describe('module is-google-analytics-anonymized', function() {
 
   this.timeout(30000);
 
