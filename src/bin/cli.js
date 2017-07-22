@@ -27,7 +27,10 @@ var yargs      = require('yargs')
   // Help
   .help('h')
   .alias('h', 'help')
-  .usage('Usage: $0 <url>');
+  .usage('Usage: $0 <url>')
+  .example('$0 https://www.epfl.ch')
+  .epilog('Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
+    'Switzerland, VPSI.');
 
 var argv = yargs.argv;
 var url  = argv._[ 0 ];
@@ -44,24 +47,24 @@ var checkAllTrackers = function(trackers) {
   return 1;
 };
 
-var putIsAnonymized = function() {
+var putIsAnonymized = function(url) {
   console.log(
     logSymbols.success,
-    colors.green('Google Analytics is anonymized')
+    colors.green('Google Analytics is anonymized for ' + url)
   );
 };
 
-var putIsNotAnonymized = function() {
+var putIsNotAnonymized = function(url) {
   console.log(
     logSymbols.error,
-    colors.red('Google Analytics is not anonymized')
+    colors.red('Google Analytics is not anonymized for ' + url)
   );
 };
 
-var putNotUsingGA = function() {
+var putNotUsingGA = function(url) {
   console.log(
     logSymbols.info,
-    colors.blue('Google Analytics is not used')
+    colors.blue('Google Analytics is not used for ' + url)
   );
 };
 
@@ -71,10 +74,10 @@ isGoogleAnalyticsAnonymized(url, function(err, data) {
   }
   var anonyme = checkAllTrackers(data.trackers);
   if (anonyme === 1) {
-    putIsAnonymized();
+    putIsAnonymized(data.url);
   } else if (anonyme === 2) {
-    putNotUsingGA();
+    putNotUsingGA(data.url);
   } else {
-    putIsNotAnonymized();
+    putIsNotAnonymized(data.url);
   }
 });
