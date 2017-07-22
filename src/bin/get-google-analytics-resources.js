@@ -15,6 +15,9 @@ var system = require('system');
 var page = require('webpage').create();
 var url = require('url');
 
+page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) ' +
+  'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36';
+
 // How long should we wait for the page to load before we exit
 var WAIT_TIME = 5000;
 
