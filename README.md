@@ -48,8 +48,8 @@ Commands:
   url  URL to check
 
 Options:
-  -v, --version  Show version number       [boolean]
   -h, --help     Show help                 [boolean]
+  -v, --version  Show version number       [boolean]
 ```
 
 API
