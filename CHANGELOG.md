@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v0.1.1 / 2017-09-26
+
+  - Update dependencies
+
 ### v0.1.0 / 2017-07-22
 
   - Add user agent string
