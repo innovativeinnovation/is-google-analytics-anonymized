@@ -35,10 +35,10 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
-    "log-symbols": "^2.0.0",
+    "log-symbols": "^2.1.0",
     "phantomjs-prebuilt": "^2.1.15",
     "querystring": "^0.2.0",
     "url": "^0.11.0",
-    "yargs": "^8.0.2"
+    "yargs": "^9.0.1"
   }
 }
