@@ -17,7 +17,7 @@
     <img alt="Dependency Status" src="https://gemnasium.com/badges/github.com/epfl-devrun/is-google-analytics-anonymized.svg" />
   </a>
   <a href="https://raw.githubusercontent.com/epfl-devrun/is-google-analytics-anonymized/master/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
+    <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
   <a href='https://www.npmjs.com/package/is-google-analytics-anonymized'>
     <img alt="NPM Version" src="https://img.shields.io/npm/v/is-google-analytics-anonymized.svg" />
