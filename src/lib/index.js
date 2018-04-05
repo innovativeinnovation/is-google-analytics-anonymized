@@ -22,9 +22,9 @@ module.exports = function(url, callback) {
     if (error) {
       error = new Error(obj.errorMsg);
       callback(error);
+    } else {
+      callback(null, obj);
     }
-
-    callback(null, obj);
   });
 
 };
