@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017.
+ * (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
  * See the LICENSE file for more details.
  */
 
@@ -23,7 +23,7 @@ var yargs = require('yargs')
   .alias('h', 'help')
   .usage('Usage: $0 <url>')
   .example('$0 https://www.epfl.ch')
-  .epilog('Copyright 2017 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
+  .epilog('Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
     'Switzerland, VPSI.');
 
 var argv = yargs.argv;
