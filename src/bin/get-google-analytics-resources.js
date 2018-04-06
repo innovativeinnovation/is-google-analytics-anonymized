@@ -29,25 +29,25 @@ var address = '';
 var data = {
   trackers: [],
   hasError: false,
-  errorMsg: '',
+  errorMsg: ''
 };
 
 // Regular expressions of resources to log when we load them
 var resourcesToLog = [
-  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com.*'),
-  new RegExp('^http(s)?://stats\.g\.doubleclick\.net.*'),
+  new RegExp('^http(s)?://(www|ssl).google-analytics.com.*'),
+  new RegExp('^http(s)?://stats.g.doubleclick.net.*')
 ];
 
 // Like ga('send', 'pageview');
 var universalGA =
-  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com/(r/)?collect.*');
+  new RegExp('^http(s)?://(www|ssl).google-analytics.com/(r/)?collect.*');
 
 // Like _gaq.push(['_trackPageview']);
 var asyncGA =
-  new RegExp('^http(s)?://(www|ssl)\.google-analytics\.com/(r/)?__utm.*');
+  new RegExp('^http(s)?://(www|ssl).google-analytics.com/(r/)?__utm.*');
 
 // If we are still running after MAX_EXECUTION_TIME, log and exit
-var onMaxExecutionTime = function() {
+var onMaxExecutionTime = function () {
   data.hasError = true;
   data.errorMsg = 'FAILED: Max execution time ' +
     Math.round(MAX_EXECUTION_TIME) + ' seconds exceeded';
@@ -56,7 +56,7 @@ var onMaxExecutionTime = function() {
 };
 
 // Open the page, wait and exit
-var onPageOpen = function(status) {
+var onPageOpen = function (status) {
   data.url = page.url;
   if (status !== 'success') {
     data.hasError = true;
@@ -68,7 +68,7 @@ var onPageOpen = function(status) {
     if (address !== page.url) {
       data.url = page.url;
     }
-    setTimeout(function() {
+    setTimeout(function () {
       console.log(JSON.stringify(data));
       phantom.exit();
     }, WAIT_TIME);
@@ -76,18 +76,18 @@ var onPageOpen = function(status) {
 };
 
 // Extract Google Analytics params
-var extractGAParams = function(urlString, idTracker, idAnonymization) {
+var extractGAParams = function (urlString, idTracker, idAnonymization) {
   var urlParsed = url.parse(urlString);
   var params = querystring.parse(urlParsed.query);
   if (params[idAnonymization]) {
     return {
       id: params[idTracker],
-      anonymized: true,
+      anonymized: true
     };
   }
   return {
     id: params[idTracker],
-    anonymized: false,
+    anonymized: false
   };
 };
 
@@ -103,10 +103,10 @@ if (system.args.length === 1) {
   address = system.args[1];
 
   // Ignore Web page errors
-  page.onError = function(msg, trace) {};
+  page.onError = function (msg, trace) {};
 
   // Every time a resource is requested
-  page.onResourceRequested = function(res) {
+  page.onResourceRequested = function (res) {
     var length = resourcesToLog.length;
     while (length--) {
       if (resourcesToLog[length].test(res.url)) {
@@ -124,7 +124,7 @@ if (system.args.length === 1) {
   };
 
   // Make a note of any errors
-  page.onResourceError = function(resourceError) {
+  page.onResourceError = function (resourceError) {
     page.reason = resourceError.errorString;
   };
 

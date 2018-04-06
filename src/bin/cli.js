@@ -5,13 +5,11 @@
  * See the LICENSE file for more details.
  */
 
-'use strict';
-
 var isGoogleAnalyticsAnonymized = require('../lib/index.js');
 
 var logSymbols = require('log-symbols');
-var colors     = require('colors');
-var yargs      = require('yargs')
+var colors = require('colors');
+var yargs = require('yargs')
 
   .command('url', 'URL to check')
   .alias('url')
@@ -29,9 +27,9 @@ var yargs      = require('yargs')
     'Switzerland, VPSI.');
 
 var argv = yargs.argv;
-var url  = argv._[ 0 ];
+var url = argv._[ 0 ];
 
-var checkAllTrackers = function(trackers) {
+var checkAllTrackers = function (trackers) {
   if (trackers.length <= 0) {
     return 2;
   }
@@ -43,28 +41,28 @@ var checkAllTrackers = function(trackers) {
   return 1;
 };
 
-var putIsAnonymized = function(url) {
+var putIsAnonymized = function (url) {
   console.log(
     logSymbols.success,
     colors.green('Google Analytics is anonymized for ' + url)
   );
 };
 
-var putIsNotAnonymized = function(url) {
+var putIsNotAnonymized = function (url) {
   console.log(
     logSymbols.error,
     colors.red('Google Analytics is not anonymized for ' + url)
   );
 };
 
-var putNotUsingGA = function(url) {
+var putNotUsingGA = function (url) {
   console.log(
     logSymbols.info,
     colors.blue('Google Analytics is not used for ' + url)
   );
 };
 
-isGoogleAnalyticsAnonymized(url, function(err, data) {
+isGoogleAnalyticsAnonymized(url, function (err, data) {
   if (err) {
     throw err;
   }
