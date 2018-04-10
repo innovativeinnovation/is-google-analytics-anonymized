@@ -40,7 +40,7 @@ $ npm install -g is-google-analytics-anonymized
 
 ### Usage
 
-```
+```console
 $ is-google-analytics-anonymized
 Usage: is-google-analytics-anonymized <url>
 
@@ -50,6 +50,11 @@ Commands:
 Options:
   -h, --help     Show help                 [boolean]
   -v, --version  Show version number       [boolean]
+  
+Examples:
+  is-google-analytics-anonymized https://www.epfl.ch
+
+Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 ```
 
 API
@@ -71,6 +76,15 @@ isGoogleAnalyticsAnonymized('https://www.epfl.ch', function(error, data) {
     throw error;
   }
   console.log(data);
+  // {
+  //   trackers: [{
+  //     id: 'UA-4833294-1',
+  //     anonymized: true
+  //   }],
+  //   hasError: false,
+  //   errorMsg: '',
+  //   url: 'https://www.epfl.ch/'
+  // }
 });
 ```
 
