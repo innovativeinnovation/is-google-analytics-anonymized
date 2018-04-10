@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v1.0.0 / 2018-04-10
+
+  - Fix async problems
+  - Move to eslint
+  - Update license copyright date
+  - Disable `package-lock.json`
+  - Improve README
+
 ### v0.2.0 / 2018-02-01
 
   - Update dependencies
