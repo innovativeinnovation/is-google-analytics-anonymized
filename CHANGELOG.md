@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.0.1 / 2018-06-08
+
+  - Move to david-dm (watching deps)
+  - Update dependencies
+
 ### v1.0.0 / 2018-04-10
 
   - Fix async problems
