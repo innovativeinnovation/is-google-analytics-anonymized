@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v1.0.2 / 2018-08-09
+
+  - Update dependencies
+
 ### v1.0.1 / 2018-06-08
 
   - Move to david-dm (watching deps)
