@@ -16,7 +16,7 @@ var server = http.createServer(function (req, res) {
 
   fs.open(filename, 'r', function (error, fd) {
     if (error) {
-      res.writeHead(404, {'Content-Type': 'text/plain'});
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.write('404 Not Found\n');
       res.end();
       return;
@@ -28,13 +28,13 @@ var server = http.createServer(function (req, res) {
 
     fs.readFile(filename, 'utf-8', function (err, file) {
       if (err) {
-        res.writeHead(500, {'Content-Type': 'text/plain'});
+        res.writeHead(500, { 'Content-Type': 'text/plain' });
         res.write(err + '\n');
         res.end();
         return;
       }
 
-      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.writeHead(200, { 'Content-Type': 'text/html' });
       res.write(file, 'utf-8');
       res.end();
     });
