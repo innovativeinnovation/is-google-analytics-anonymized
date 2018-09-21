@@ -35,13 +35,13 @@ Install this globally and you'll have access to the
 `is-google-analytics-anonymized` command anywhere on your system.
 
 ```bash
-$ npm install -g is-google-analytics-anonymized
+npm i is-google-analytics-anonymized -g
 ```
 
 ### Usage
 
 ```console
-$ is-google-analytics-anonymized
+is-google-analytics-anonymized
 Usage: is-google-analytics-anonymized <url>
 
 Commands:
@@ -63,7 +63,7 @@ API
 ### Install
 
 ```bash
-$ npm install --save is-google-analytics-anonymized
+npm i is-google-analytics-anonymized --save
 ```
 
 ### Usage
