@@ -8,9 +8,9 @@ Setup
 -----
 
 ```bash
-$ git clone REPO
-$ cd is-google-analytics-anonymized
-$ npm install
+git clone git@github.com:epfl-devrun/is-google-analytics-anonymized.git
+cd is-google-analytics-anonymized
+npm i
 ```
 
 Test
@@ -19,29 +19,29 @@ Test
 Unit and integration tests:
 
 ```bash
-$ npm test
+npm t
 ```
 
 Code coverage:
 
 ```bash
-$ npm run coverage
+npm run coverage
 ```
 
 Run
 ---
 
 ```bash
-$ ./src/bin/cli.js
+./src/bin/cli.js
 ```
 
 Release
 -------
 
-  1. Bump the correct version (``npm version [<newversion> | major | minor | patch]``)
+  1. Bump the correct version (`npm version [<newversion> | major | minor | patch]`)
   2. Update the file [CHANGELOG.md](CHANGELOG.md)
-  3. Create the tag (``git tag -a v<version> -m "Tagging the v<version> release"``)
-  4. Publish with ``npm publish``
+  3. Create the tag (`git tag -a v<version> -m "Tagging the v<version> release"`)
+  4. Publish with `npm publish`
 
 License
 -------
