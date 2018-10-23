@@ -53,8 +53,6 @@ Options:
   
 Examples:
   is-google-analytics-anonymized https://www.epfl.ch
-
-Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI.
 ```
 
 API
