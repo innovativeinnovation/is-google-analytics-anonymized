@@ -10,7 +10,7 @@
   ],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/epfl-devrun/is-google-analytics-anonymized.git",
+  "repository": "https://github.com/innovativeinnovation/is-google-analytics-anonymized.git",
   "engines": {
     "node": ">=4"
   },

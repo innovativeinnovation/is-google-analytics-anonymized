@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Is Google Analytics anonymized" src="https://raw.githubusercontent.com/epfl-devrun/is-google-analytics-anonymized/master/docs/readme/readme-logo.png">
+  <img alt="Is Google Analytics anonymized" src="https://raw.githubusercontent.com/innovativeinnovation/is-google-analytics-anonymized/master/docs/readme/readme-logo.png">
 </p>
 
 <p align="center">
@@ -7,16 +7,16 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/epfl-devrun/is-google-analytics-anonymized">
-    <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/is-google-analytics-anonymized.svg?branch=master">
+  <a href="https://travis-ci.org/innovativeinnovation/is-google-analytics-anonymized">
+    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/is-google-analytics-anonymized.svg?branch=master">
   </a>
-  <a href="https://coveralls.io/github/epfl-devrun/is-google-analytics-anonymized?branch=master">
-    <img alt="Coverage Status" src="https://coveralls.io/repos/github/epfl-devrun/is-google-analytics-anonymized/badge.svg?branch=master"/>
+  <a href="https://coveralls.io/github/innovativeinnovation/is-google-analytics-anonymized?branch=master">
+    <img alt="Coverage Status" src="https://coveralls.io/repos/github/innovativeinnovation/is-google-analytics-anonymized/badge.svg?branch=master"/>
   </a>
-  <a href="https://david-dm.org/epfl-devrun/is-google-analytics-anonymized">
-    <img alt="Dependency Status" src="https://david-dm.org/epfl-devrun/is-google-analytics-anonymized/status.svg"/>
+  <a href="https://david-dm.org/innovativeinnovation/is-google-analytics-anonymized">
+    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/is-google-analytics-anonymized/status.svg"/>
   </a>
-  <a href="https://raw.githubusercontent.com/epfl-devrun/is-google-analytics-anonymized/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/innovativeinnovation/is-google-analytics-anonymized/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
   <a href='https://www.npmjs.com/package/is-google-analytics-anonymized'>
@@ -91,7 +91,7 @@ isGoogleAnalyticsAnonymized('https://www.epfl.ch', function(error, data) {
 Screenshot
 ----------
 
-![Command line](https://raw.githubusercontent.com/epfl-devrun/is-google-analytics-anonymized/master/docs/readme/screenshot.png)
+![Command line](https://raw.githubusercontent.com/innovativeinnovation/is-google-analytics-anonymized/master/docs/readme/screenshot.png)
 
 Contributing
 ------------
@@ -110,6 +110,7 @@ License
 
 Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
+Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.  
+Modified work (c) William Belle, 2018.
 
 See the [LICENSE](LICENSE) file for more details.
