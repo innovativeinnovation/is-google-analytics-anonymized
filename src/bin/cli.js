@@ -24,9 +24,7 @@ var yargs = require('yargs')
   .help('h')
   .alias('h', 'help')
   .usage('Usage: $0 <url>')
-  .example('$0 https://www.epfl.ch')
-  .epilog('Copyright 2017-2018 ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, ' +
-    'Switzerland, VPSI.');
+  .example('$0 https://www.epfl.ch');
 
 var argv = yargs.argv;
 var url = argv._[ 0 ];
