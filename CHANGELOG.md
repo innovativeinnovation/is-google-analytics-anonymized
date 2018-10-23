@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v1.0.4 / 2018-10-23
+
+  - Update copyright (transfer from EPFL DevRun)
+
 ### v1.0.3 / 2018-09-21
 
   - Update dependencies
