@@ -14,7 +14,6 @@ var colors = require('colors');
 var yargs = require('yargs')
 
   .command('url', 'URL to check')
-  .alias('url')
   .required(1, 'URL is required')
 
   // Version
