@@ -10,7 +10,7 @@ require('chai').should();
 var version = require('../package').version;
 
 describe('cli is-google-analytics-anonymized', function () {
-  this.timeout(15000);
+  this.timeout(30000);
   var cliOption = '-v';
   var response;
 
