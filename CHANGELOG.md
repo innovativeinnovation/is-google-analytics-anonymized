@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v2.0.0 / 2019-05-01
+
+  - Drop support for Node < 8
+  - Move from `istanbul` to `nyc` for code coverage
+  - Test against Node.js 11 and 12
+  - Update dependencies
+  - Remove `.eslintignore`
+
 ### v1.0.6 / 2019-02-22
 
   - Update dependencies
