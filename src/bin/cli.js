@@ -26,7 +26,7 @@ var yargs = require('yargs')
   .example('$0 https://www.epfl.ch');
 
 var argv = yargs.argv;
-var url = argv._[ 0 ];
+var url = argv._[0];
 
 var checkAllTrackers = function (trackers) {
   if (trackers.length <= 0) {
