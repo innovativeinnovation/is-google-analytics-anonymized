@@ -14,7 +14,7 @@
     <img alt="Coverage Status" src="https://coveralls.io/repos/github/innovativeinnovation/is-google-analytics-anonymized/badge.svg?branch=master"/>
   </a>
   <a href="https://david-dm.org/innovativeinnovation/is-google-analytics-anonymized">
-    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/is-google-analytics-anonymized/status.svg"/>
+    <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/is-google-analytics-anonymized/status.svg"/>
   </a>
   <a href="https://raw.githubusercontent.com/innovativeinnovation/is-google-analytics-anonymized/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
@@ -53,6 +53,7 @@ Options:
   
 Examples:
   is-google-analytics-anonymized https://www.epfl.ch
+  is-google-analytics-anonymized https://apple.com
 ```
 
 API
@@ -89,7 +90,7 @@ isGoogleAnalyticsAnonymized('https://www.epfl.ch', function(error, data) {
 Screenshot
 ----------
 
-![Command line](https://raw.githubusercontent.com/innovativeinnovation/is-google-analytics-anonymized/master/docs/readme/screenshot.png)
+![command line screenshot](https://raw.githubusercontent.com/innovativeinnovation/is-google-analytics-anonymized/master/docs/readme/screenshot.png)
 
 Contributing
 ------------
