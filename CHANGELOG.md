@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v2.0.1 / 2019-07-14
+
+  - Improve wording
+  - Update dependencies
+
 ### v2.0.0 / 2019-05-01
 
   - Drop support for Node < 8
