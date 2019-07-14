@@ -23,7 +23,8 @@ var yargs = require('yargs')
   .help('h')
   .alias('h', 'help')
   .usage('Usage: $0 <url>')
-  .example('$0 https://www.epfl.ch');
+  .example('$0 https://www.epfl.ch')
+  .example('$0 https://apple.com');
 
 var argv = yargs.argv;
 var url = argv._[0];
@@ -43,21 +44,21 @@ var checkAllTrackers = function (trackers) {
 var putIsAnonymized = function (url) {
   console.log(
     logSymbols.success,
-    colors.green('Google Analytics is anonymized for ' + url)
+    colors.green('Google Analytics is anonymized on ' + url)
   );
 };
 
 var putIsNotAnonymized = function (url) {
   console.log(
     logSymbols.error,
-    colors.red('Google Analytics is not anonymized for ' + url)
+    colors.red('Google Analytics is not anonymized on ' + url)
   );
 };
 
 var putNotUsingGA = function (url) {
   console.log(
     logSymbols.info,
-    colors.blue('Google Analytics is not used for ' + url)
+    colors.blue('Google Analytics is not used on ' + url)
   );
 };
 
