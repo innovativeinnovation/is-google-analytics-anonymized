@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v2.0.2 / 2019-11-20
+
+  - Update dependencies
+  - Test against Node.js 13
+
 ### v2.0.1 / 2019-07-14
 
   - Improve wording
