@@ -1,6 +1,6 @@
 {
   "name": "is-google-analytics-anonymized",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Check IP Anonymization of Google Analytics in a Web page",
   "keywords": [
     "google",
