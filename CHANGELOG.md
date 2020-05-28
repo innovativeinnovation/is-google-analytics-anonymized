@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v2.0.4 / 2020-05-28
+
+  - Update dependencies
+  - Test against Node.js 14
+
 ### v2.0.3 / 2020-01-30
 
   - Update dependencies
