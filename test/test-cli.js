@@ -33,11 +33,11 @@ describe('cli is-google-analytics-anonymized', function () {
   it('should match "Google Analytics is anonymized" with ' +
     'https://www.epfl.ch', function () {
     response.should.match(/Google Analytics is anonymized/);
-    cliOption = 'https://www.myswitzerland.com/';
+    cliOption = 'https://www.vaud.swiss/';
   });
 
   it('should match "Google Analytics is not anonymized" with ' +
-    'https://www.myswitzerland.com/', function () {
+    'https://www.vaud.swiss/', function () {
     response.should.match(/Google Analytics is not anonymized/);
     cliOption = 'https://www.apple.com';
   });
