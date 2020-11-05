@@ -8,6 +8,8 @@
   "rules": {
     "semi": [2, "always"],
     "max-len": [2, 80],
-    "node/no-deprecated-api": "off"
+    "node/no-deprecated-api": "off",
+    "no-var": 0,
+    "prefer-regex-literals": 0
   }
 }
