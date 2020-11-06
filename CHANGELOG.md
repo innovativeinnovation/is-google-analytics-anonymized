@@ -1,6 +1,14 @@
 Changelog
 =========
 
+### v3.0.0 / 2020-11-06
+
+  - Drop support for Node.js < 10
+  - Fix collect endpoint ('/j')
+  - Update dependencies
+  - Test against Node.js 15 
+  - Migrate travis-ci.org to .com 
+
 ### v2.0.4 / 2020-05-28
 
   - Update dependencies
