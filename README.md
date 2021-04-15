@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.com/innovativeinnovation/is-google-analytics-anonymized">
-    <img alt="Travis Status" src="https://travis-ci.com/innovativeinnovation/is-google-analytics-anonymized.svg?branch=master">
+  <a href="https://github.com/innovativeinnovation/is-google-analytics-anonymized/actions">
+    <img alt="Build Status" src="https://github.com/innovativeinnovation/is-google-analytics-anonymized/workflows/Build/badge.svg?branch=master">
   </a>
   <a href="https://coveralls.io/github/innovativeinnovation/is-google-analytics-anonymized?branch=master">
     <img alt="Coverage Status" src="https://coveralls.io/repos/github/innovativeinnovation/is-google-analytics-anonymized/badge.svg?branch=master"/>
