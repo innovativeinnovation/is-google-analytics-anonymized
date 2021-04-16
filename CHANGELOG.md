@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v3.0.1 / 2021-04-16
+
+  - Update and clean dependencies
+  - Migrate from Travis CI to GitHub Actions
+  - Remove badge dependencies
+
 ### v3.0.0 / 2020-11-06
 
   - Drop support for Node.js < 10
